@@ -1,0 +1,10 @@
+
+<router-outlet></router-outlet>
+<nav>
+    <p><a routerLink="" class="ref">Главная</a></p>
+    <p><a routerLink="/about" class="ref">о сайте </a></p>
+    <p><a routerLink="/fillmodel" class="ref">Добавить модель</a></p>
+</nav>
+<div *ngFor="let model of models">
+  <a [routerLink]='["models", model]'>Модель {{model}}</a>
+</div>
